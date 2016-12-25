@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+>
+    <include layout="@layout/activity_top"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <ImageView
+            android:src="@drawable/map2"
+            android:id="@+id/map"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_div"
+            android:id="@+id/button9"
+            />
+
+
+
+        <EditText
+            android:hint="搜索电梯"
+            android:textSize="20sp"
+            android:background="@drawable/qq_edit_login"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button9" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/search"
+            />
+        <Button
+            android:text="电梯故障记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_div"
+            />
+
+    </LinearLayout>
+</LinearLayout>

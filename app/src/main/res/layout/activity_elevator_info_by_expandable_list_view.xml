@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_login"
+>
+    <LinearLayout
+        android:id="@+id/loginPanel_from_login"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@drawable/background_login_div"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/start_floor"
+            android:text="起始楼层 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/start_floor_textview"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/start_floor" />
+        <TextView
+            android:text="楼"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/start_floor_textview" />
+        <Button
+            android:id="@+id/start_floor_button"
+            android:text="修改"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_alignBottom="@id/start_floor_textview"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="目的楼层 : "
+            android:id="@+id/end_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:text="3"
+            android:id="@+id/end_floor_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_toEndOf="@+id/end_floor" />
+        <TextView
+            android:text="楼"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_toEndOf="@+id/end_floor_textview" />
+        <Button
+            android:id="@+id/end_floor_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:layout_marginRight="7dp"
+
+            android:layout_alignBottom="@id/end_floor_textview"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索最快电梯"
+        android:textSize="20sp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:id="@+id/search_first_elevator"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true" />
+
+<!--    <TextView
+        android:id="@+id/prompt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电梯列表"
+        android:textSize="25sp"
+        android:layout_below="@+id/search_first_elevator"
+        android:layout_centerHorizontal="true" />-->
+    <ExpandableListView
+        android:id="@+id/expandable_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt_info"></ExpandableListView>
+    </LinearLayout>
+
+</RelativeLayout>

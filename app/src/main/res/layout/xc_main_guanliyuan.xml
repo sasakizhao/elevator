@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+    <include
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/xc_title"
+        android:layout_alignParentTop="true"/>
+
+    <FrameLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<!--        <ImageView
+            android:src="@drawable/dt_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+        <ImageView
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/doraemon"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <Button
+         android:text="@string/main_cj"
+         android:background="#FFD700"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="46dp"
+         android:id="@+id/button16"
+         android:layout_below="@+id/button18"
+         android:layout_alignParentStart="true" />
+
+     <Button
+         android:text="信息管理"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/button17"
+         android:background="#FFD700"
+         android:layout_alignBaseline="@+id/button16"
+         android:layout_alignBottom="@+id/button16"
+         android:layout_alignParentEnd="true" />
+
+     <Button
+         android:text="辅助乘梯"
+         android:background="#FFD700"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/button19"
+         android:layout_marginEnd="60dp"
+         android:layout_alignBaseline="@+id/button18"
+         android:layout_alignBottom="@+id/button18"
+         android:layout_alignParentEnd="true" />
+
+     <Button
+         android:text="最快电梯查询"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="#FFD700"
+         android:id="@+id/button18"
+
+         android:layout_marginTop="22dp"
+         android:layout_alignParentTop="true"
+         android:layout_toEndOf="@+id/button16" />
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentStart="true">
+         <Spinner
+             android:entries="@array/school"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/xc_spinner_school"
+             android:textSize="40sp"
+             android:layout_marginBottom="15dp" />
+         <Spinner
+             android:entries="@array/builder"
+             android:layout_gravity="center_vertical|center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/xc_spinner_builder" />
+
+     </LinearLayout>
+
+     <Button
+         android:background="#FFD700"
+         android:text="@string/main_gl"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentStart="true"
+         android:layout_marginBottom="245dp"
+         android:id="@+id/button24" />
+
+     <Button
+         android:text="个人帐号"
+         android:background="#FFD700"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/button25"
+         android:layout_alignTop="@+id/button24"
+         android:layout_alignParentEnd="true" />
+
+
+ </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

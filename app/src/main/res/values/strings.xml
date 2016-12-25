@@ -1,0 +1,65 @@
+<resources>
+<!--    <string name="app_name">电梯辅助功能监控系统</string>-->
+    <string name="app_name">电梯乘坐智能化系统</string>
+    <string name="reg_title">帐号注册</string>
+    <string name="spinner_name">选择注册类型</string>
+    <string name="login_title"> 登录</string>
+    <string name="jiuyuan_info">请输入救援信息</string>
+    <string name="dtyx">电梯运行信息查询</string>
+    <string name="run_jiankong">电梯运行状态监控</string>
+    <string name="map_jiankong">电梯地图监控</string>
+    <string name="back">返回</string>
+    <string-array name="elevator">
+        <item>电梯注册ID：id_4   故障类型：平层异常</item>
+        <item>电梯注册ID：id_3   故障类型：非门区开门</item>变频器
+        <item>电梯注册ID：id_2   故障类型：变频器过压</item>
+    </string-array>
+
+    <string-array name="school">
+        <item>哈尔滨理工大学</item>
+        <item>黑龙江大学</item>
+    </string-array>
+    <string-array name="builder">
+        <item>西区新主楼</item>
+        <item>西区一号楼</item>
+        <item>西区图书馆</item>
+        <item>南区图书馆</item>
+    </string-array>
+    <string name="yonghu">安全用户</string>
+    <string name="fast_ele_1">条件最快电梯查询</string>
+    <string name="fast_ele_2">固定最快电梯查询</string>
+    <string name="dingshi">定时乘梯</string>
+    <string name="anquan">安全楼层选择</string>
+    <string name="anquan_set">安全楼层设置</string>
+    <string name="alr_anquan_set">已设置楼层</string>
+    <string name="qunti">权限群体设置</string>
+    <string name="shenqing">层禁楼层申请</string>
+    <string name="shenqingchuli">层禁楼层申请处理</string>
+    <string name="quanxianchuli">权限申请处理</string>
+
+    <string name="main_qx">权限申请</string>
+
+    <string name="main_cj">安全楼层层禁</string>
+    <string name="main_gl">权限管理</string>
+    <string name="address">哈尔滨理工大学</string>
+    <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string-array name="guanliyuan">
+        <item>小曹</item>
+        <item>小鹏</item>
+        <item>小东</item>
+    </string-array>
+    <string-array name="louceng">
+        <item>1楼</item>
+        <item>2楼</item>
+        <item>3楼</item>
+        <item>4楼</item>
+        <item>5楼</item>
+    </string-array>
+    <string-array name="time">
+        <item>临时</item>
+        <item>永久</item>
+    </string-array>
+</resources>

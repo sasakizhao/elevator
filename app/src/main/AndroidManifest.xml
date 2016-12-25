@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhao.elevator">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <application
+        android:name=".utils.Data"
+        android:allowBackup="true"
+        android:icon="@drawable/notification2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.RegisterActivity"/>
+
+        <activity android:name=".activity.testActivity.M2Act"/>
+        <activity android:name=".activity.testActivity.FasteleActivity"/>
+        <activity android:name=".activity.testActivity.ElevatorInfoByExpandableListViewActivity"/>
+        <activity android:name=".activity.testActivity.RescueActivity"/>
+        <activity android:name=".activity.testActivity.MapActivity"/>
+        <activity android:name=".activity.testActivity.RealtimeActivity"/>
+        <activity android:name=".activity.testActivity.WeixiuActivity"/>
+        <activity android:name=".activity.testActivity.Guzhang1"/>
+        <activity android:name=".activity.testActivity.SearchActivity"/>
+    <!--小曹的图片-->
+    <activity android:name=".activity.xc_activity.XC_LoginActivity"/>
+    <activity android:name=".activity.xc_activity.XC_MainActivity"/>
+    <activity android:name=".activity.xc_activity.XC_Reg1Activity"/>
+    <activity android:name=".activity.xc_activity.XC_Reg2Activity" />
+    <activity android:name=".activity.xc_activity.XC_indexActivity"/>
+<activity android:name=".activity.xc_activity.XC_fast_elevator_Activity"
+/>
+
+        <activity android:name=".activity.xc_activity.XC_fast2_Activity"/>
+<activity android:name=".activity.xc_activity.XC_yunxing_Activity"/>
+<activity android:name=".activity.xc_activity.XC_dingshi_Activity"/>
+<activity android:name=".activity.xc_activity.XC_anquan_Activity"
+/>
+<activity android:name=".activity.xc_activity.XC_anquan_set_Activity"/>
+<activity android:name=".activity.xc_activity.XC_qunti_Activity"/>
+        <activity android:name=".activity.xc_activity.XC_cengjin_Activity"/>
+        <activity android:name=".activity.xc_activity.XC_cengjin2_Activity"/>
+        <activity android:name=".activity.xc_activity.XC_quanx1_Activity"/>
+        <activity android:name=".activity.xc_activity.XC_quanx2_Activity"/>
+        <activity android:name=".activity.xc_activity.XC_002_Activity"/>
+        <activity android:name=".activity.xc_activity.XC_001_Activity"/>
+<activity android:name=".activity.xc_activity.XC_xinxiguanli1"/>
+        <activity android:name=".activity.xc_activity.XC_xinxiguanli2"/>
+<activity android:name=".activity.xc_activity.XC_map_Activity"/>
+
+    </application>
+</manifest>

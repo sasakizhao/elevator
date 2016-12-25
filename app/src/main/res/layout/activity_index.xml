@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sasaki.elevatorinfo.Activity.IndexActivity">
+
+    <Button
+        android:id="@+id/login_btn_from_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录页面" />
+
+    <Button
+        android:id="@+id/register_btn_from_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_btn_from_index"
+        android:text="注册页面" />
+
+    <Button
+        android:id="@+id/info_btn_from_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_btn_from_index"
+        android:text="最快电梯页面" />
+
+    <Button
+        android:id="@+id/info_btn2_from_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/info_btn_from_index"
+        android:text="最快电梯页面2" />
+
+    <Button
+        android:id="@+id/user_info_btn_from_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/info_btn2_from_index"
+        android:text="我的信息" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".Frag.MainIndexActivity">
+
+    <include layout="@layout/activity_top"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:text="请输入救援信息"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:src="@android:drawable/ic_menu_mapmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="127dp" />
+
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_bottom"/>
+
+</LinearLayout>

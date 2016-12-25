@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+>
+
+    <include layout="@layout/activity_top"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp">
+
+
+        <TextView
+            android:text="请选择乘梯时间"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <TimePicker
+            android:layout_width="320dp"
+            android:layout_height="340dp"
+            android:id="@+id/timePicker"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="乘梯预约"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_bottom"/>
+</LinearLayout>
